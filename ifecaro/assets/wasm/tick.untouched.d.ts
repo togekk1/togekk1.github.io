@@ -1,4 +1,6 @@
 declare namespace __AdaptedExports {
+  /** Exported memory */
+  export const memory: WebAssembly.Memory;
   /**
    * src/assembly/functions/tick/tick
    */
