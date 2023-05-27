@@ -79,10 +79,8 @@ export async function db_count(
     );
     const get_db_data = (event: MessageEvent) => {
       db_worker.removeEventListener("message", get_db_data);
-      console.log(22);
       resolve(event.data);
     };
-    console.log(21);
     db_worker.addEventListener("message", get_db_data);
   });
 }
